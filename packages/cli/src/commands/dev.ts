@@ -72,7 +72,7 @@ export async function devCommand(path: string, anyOptions: any) {
       },
     });
   } catch (err) {
-    logger.error(`❌ [trigger.dev] No server found on port ${options.port}.`);
+    logger.error(`❌ [trigger.dev] No server found running on port ${options.port}.`);
     process.exit(1);
   }
 
